@@ -2,7 +2,7 @@
 CS4701 Group42
 
 ## Introduction to the GrandStaff Dataset 
-- The dataset we use to train our model is from the paper [$\textit{End-to-end Optical Music Recognition for Pianoform Sheet Music}$](https://link.springer.com/article/10.1007/s10032-023-00432-z), written by Ríos-Vila, A., Rizo, D., Iñesta, J.M. et al.
+- The dataset we use to train our model is from the paper [*End-to-end Optical Music Recognition for Pianoform Sheet Music*](https://link.springer.com/article/10.1007/s10032-023-00432-z), written by Ríos-Vila, A., Rizo, D., Iñesta, J.M. et al.
 - The history of OMR process includes the following stages
   - Stage 1: \
     There is a first set in which the basic symbols such as note heads, beams, or accidentals (usually referred to as “primitives”) are detected
