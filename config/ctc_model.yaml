@@ -1,0 +1,19 @@
+batch_size: 16
+conv_blocks: 4
+conv_filters:
+  - 32
+  - 64
+  - 128
+  - 256
+conv_kernel_size:
+  - [3, 3]
+  - [3, 3]
+  - [3, 3]
+  - [3, 3]
+conv_pooling_size:
+  - [2, 2]
+  - [2, 2]
+  - [2, 2]
+  - [2, 2]
+rnn_units: 512
+rnn_layers: 2

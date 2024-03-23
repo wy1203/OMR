@@ -18,6 +18,26 @@ CS4701 Group42
     python extract_dataset.py
     ```
 
+## Convolutionary Recurrent Neural Network (CRNN)
+- A hybrid neural network architecture that combines the feature extraction capabilities of CNNs with the sequence modeling capabilities of RNNs. This architecture is particularly suited for tasks that involve sequential input data with important spatial features, such as images or videos.
+- Structure
+  - *Convolutional Layers*: \
+    The CRNN begins with a series of convolutional layers, which are responsible for extracting a hierarchy of spatial features from the input data. These layers automatically learn to identify patterns, textures, and various features that are crucial for understanding the content of the input.
+
+  - *Recurrent Layers*: \
+    The features extracted by the convolutional layers are then processed by recurrent layers. These layers, typically composed of Long Short-Term Memory (LSTM) units or Gated Recurrent Units (GRUs), are adept at capturing the temporal or sequential dependencies between the features.
+
+  - *Output Layer*: \
+    Finally, the output from the recurrent layers is passed through a dense layer (or layers) to make predictions. For sequence recognition tasks, the output is usually a sequence of symbols or characters.
+
+## Connectionist Temporal Classification (CTC)
+- A type of loss function and decoding algorithm used in training neural networks for sequence recognition tasks. It allows the network to output variable-length sequences without requiring a pre-defined alignment between the input data and the output labels.
+- Usage
+  - *Loss Calculation* \
+  During training, the CTC loss function calculates the probability of the target sequence given the input sequence, summing over all possible alignments between the input and the target. This process enables the model to learn the best possible mapping from inputs to outputs without explicit segmentation or alignment in the training data.
+  - *Decoding* \
+  At inference time, CTC decoding algorithms (such as greedy decoding or beam search decoding) are used to predict the most likely sequence of labels from the model's output probabilities. These algorithms take into account the sequential nature of the data and the possibility of repeated or omitted symbols in the prediction
+
 ## Useful Links for Report
 - [Robust and Adaptive OMR System Including Fuzzy Modeling, Fusion of Musical Rules, and Possible Error Detection](https://doi.org/10.1155/2007/81541)
 - 
