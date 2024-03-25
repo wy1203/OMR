@@ -1,0 +1,5 @@
+PyYAML
+tensorflow
+scikit-learn
+opencv-python
+numpy
