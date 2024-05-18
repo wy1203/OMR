@@ -12,6 +12,21 @@ Install packages:
 
 `pip install -r requirements.txt`
 
+## How to Run 
+- Load the dataset (see below for download instruction)
+  ```
+  cd $PATH_TO_OMR/OMR
+  python extract_dataset.py
+  ```
+- Train and Evaluate:
+  ```
+  python train.py
+  ```
+- Demo (can only be run after training)
+  ```
+  python demo.py
+  ```
+  
 ## Introduction to the GrandStaff Dataset
 
 - The dataset we use to train our model is from the paper [_End-to-end Optical Music Recognition for Pianoform Sheet Music_](https://link.springer.com/article/10.1007/s10032-023-00432-z), written by Ríos-Vila, A., Rizo, D., Iñesta, J.M. et al.
@@ -24,11 +39,6 @@ Install packages:
   - based on [\*\*`kern` scheme](https://www.humdrum.org/guide/ch02/)
   - A `kern` file is a sequence of lines
   - Details please refer to [Hundrum Tool Kit](https://www.humdrum.org/rep/kern/)
-- Load the dataset
-  ```
-  cd $PATH_TO_OMR/OMR
-  python extract_dataset.py
-  ```
 
 ## Convolutionary Recurrent Neural Network (CRNN)
 
@@ -44,16 +54,4 @@ Install packages:
   - _Output Layer_: \
     Finally, the output from the recurrent layers is passed through a dense layer (or layers) to make predictions. For sequence recognition tasks, the output is usually a sequence of symbols or characters.
 
-## Connectionist Temporal Classification (CTC)
 
-- A type of loss function and decoding algorithm used in training neural networks for sequence recognition tasks. It allows the network to output variable-length sequences without requiring a pre-defined alignment between the input data and the output labels.
-- Usage
-  - _Loss Calculation_ \
-    During training, the CTC loss function calculates the probability of the target sequence given the input sequence, summing over all possible alignments between the input and the target. This process enables the model to learn the best possible mapping from inputs to outputs without explicit segmentation or alignment in the training data.
-  - _Decoding_ \
-    At inference time, CTC decoding algorithms (such as greedy decoding or beam search decoding) are used to predict the most likely sequence of labels from the model's output probabilities. These algorithms take into account the sequential nature of the data and the possibility of repeated or omitted symbols in the prediction
-
-## Useful Links for Report
-
-- [Robust and Adaptive OMR System Including Fuzzy Modeling, Fusion of Musical Rules, and Possible Error Detection](https://doi.org/10.1155/2007/81541)
--
