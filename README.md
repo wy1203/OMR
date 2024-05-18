@@ -13,7 +13,8 @@ Install packages:
 `pip install -r requirements.txt`
 
 ## How to Run 
-- Load the dataset (see below for download instruction)
+- Download the [dataset](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-5423)
+- Load the dataset 
   ```
   cd $PATH_TO_OMR/OMR
   python extract_dataset.py
