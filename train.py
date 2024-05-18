@@ -66,7 +66,7 @@ def train():
     criterion = torch.nn.CrossEntropyLoss()  # Use Cross-Entropy Loss
 
     print("Start Training")
-    num_epochs = 50
+    num_epochs = 10
     train_losses = []
     val_losses = []
 
