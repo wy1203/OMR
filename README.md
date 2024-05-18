@@ -12,9 +12,10 @@ Install packages:
 
 `pip install -r requirements.txt`
 
-## How to Run 
+## How to Run
+
 - Download the [dataset](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-5423)
-- Load the dataset 
+- Load the dataset
   ```
   cd $PATH_TO_OMR/OMR
   python extract_dataset.py
@@ -27,7 +28,8 @@ Install packages:
   ```
   python demo.py
   ```
-  
+  ![Demo](demo.png)
+
 ## Introduction to the GrandStaff Dataset
 
 - The dataset we use to train our model is from the paper [_End-to-end Optical Music Recognition for Pianoform Sheet Music_](https://link.springer.com/article/10.1007/s10032-023-00432-z), written by Ríos-Vila, A., Rizo, D., Iñesta, J.M. et al.
@@ -54,5 +56,3 @@ Install packages:
 
   - _Output Layer_: \
     Finally, the output from the recurrent layers is passed through a dense layer (or layers) to make predictions. For sequence recognition tasks, the output is usually a sequence of symbols or characters.
-
-
