@@ -31,7 +31,7 @@ class CRNN(nn.Module):
                             bidirectional=True, batch_first=True))
             self.rnn.append(nn.Dropout(0.25))
 
-        self.output = nn.Linear(self.rnn_units * 2, self.vocabulary_size + 1)
+        self.output = nn.Linear(self.rnn_units * 2, self.vocabulary_size)
 
     def forward(self, x):
         x = self.linear(x)
